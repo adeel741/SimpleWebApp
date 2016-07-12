@@ -26,11 +26,22 @@
     <build>
         <plugins>
             <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <instrumentation>
+                        <excludes>
+                            <exclude>com/develogical/web/**.class</exclude>
+                            <exclude>com/develogical/**.class</exclude>
+                        </excludes>
+                    </instrumentation>
+                    <check>
+                        <!-- Per-class thrsholds -->
+                        <lineRate>80</lineRate>
+                        <branchRate>80</branchRate>
+                    </check>
+
                 </configuration>
             </plugin>
         </plugins>
