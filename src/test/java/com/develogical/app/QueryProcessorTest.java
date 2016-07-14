@@ -12,7 +12,8 @@ public class QueryProcessorTest {
 
     @Test
     public void returnsEmptyStringIfCannotProcessQuery() throws Exception {
-
+        QueryProcessor query = new QueryProcessor();
+        query.process("which of the following numbers is the largest: 12, 123, 141515 , 24");
     }
 
 
