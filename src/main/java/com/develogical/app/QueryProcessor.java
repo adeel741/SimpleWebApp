@@ -7,6 +7,7 @@ public class QueryProcessor {
             if (n % i == 0)
                 return false;
         }
+        System.out.println("Testing Prime: "+ n);
         return true;
     }
 
@@ -51,7 +52,7 @@ public class QueryProcessor {
 
 
         }else if (query.toLowerCase().contains("primes")){
-/*            String result ="";
+            String result ="";
             queryNumbers = query.split(":")[1].split(",");
 
             for (int i=0;i<queryNumbers.length;i++) {
@@ -59,16 +60,19 @@ public class QueryProcessor {
 
                     queryInt[i] = Integer.parseInt(queryNumbers[i].trim());
                     if (isPrime(queryInt[i])){
-                        result+= Integer.toString(queryInt[i])+ " ";
+                        result += Integer.toString(queryInt[i])+ " ";
                     }
                 }
                 System.out.println("Primes: "+result);
                 return result;
-            }*/
+            }
 
 
         }else if (query.toLowerCase().contains("Eiffel")){
             return "Paris";
+        }
+        else if (query.toLowerCase().contains("banana")){
+            return "yellow";
         }
 
 
