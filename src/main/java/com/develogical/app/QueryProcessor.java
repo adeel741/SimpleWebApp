@@ -11,7 +11,7 @@ public class QueryProcessor {
 
             String[] split = query.split(":");
             queryNumbers = split[1].split(",");
-                System.out.println(queryNumbers.toString());
+
                 for (int i=0;i<queryNumbers.length;i++) {
                     if (queryNumbers[i] != null && queryNumbers[i] != "") {
 
@@ -25,13 +25,13 @@ public class QueryProcessor {
             return Integer.toString(max);
         }else if (query.toLowerCase().contains("plus")){
             String[] array = query.split(" ");
-            int result = Integer.parseInt(array[2]) + Integer.parseInt(array[4]);
+            int result = Integer.parseInt(array[3]) + Integer.parseInt(array[5]);
             System.out.println(result);
             return Integer.toString(result);
         }
         else if (query.toLowerCase().contains("multiplied")){
             String[] array = query.split(" ");
-            int result = Integer.parseInt(array[2]) * Integer.parseInt(array[5]);
+            int result = Integer.parseInt(array[3]) * Integer.parseInt(array[6]);
             System.out.println(result);
             return Integer.toString(result);
         } else if (query.toLowerCase().contains("square and a cube")){
