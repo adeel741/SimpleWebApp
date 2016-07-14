@@ -15,6 +15,11 @@ public class QueryProcessorTest {
         QueryProcessor query = new QueryProcessor();
         query.process("which of the following numbers is the largest: 12, 123, 141515 , 24");
     }
+    @Test
+    public void plustest() throws Exception {
+        QueryProcessor query = new QueryProcessor();
+        query.process("what is 100 plus 12");
+    }
 
 
 }

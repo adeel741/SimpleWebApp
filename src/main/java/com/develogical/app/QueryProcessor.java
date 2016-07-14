@@ -17,11 +17,15 @@ public class QueryProcessor {
                         if (queryInt[i] > max) {
                             max = queryInt[i];
                         }
-                        System.out.println("MAX VALUE: " + max);
                     }
                 }
             return Integer.toString(max);
         }else if (query.toLowerCase().contains("plus")){
+            String[] array = query.split(" ");
+            int result = Integer.parseInt(array[2]) + Integer.parseInt(array[4]);
+            return Integer.toString(result);
+        }
+        else if (query.toLowerCase().contains("multiplied")){
 
         }
 
