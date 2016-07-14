@@ -78,6 +78,8 @@ public class QueryProcessor {
         }
         else if (query.toLowerCase().contains("Bond")){
             return "Sean Connery";
+        }else if (query.toLowerCase().contains("Spain")){
+            return "peseta";
         }
 
 
