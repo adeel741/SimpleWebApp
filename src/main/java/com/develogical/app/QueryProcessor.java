@@ -2,10 +2,18 @@ package com.develogical.app;
 
 
 public class QueryProcessor {
+    boolean isPrime(int n) {
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0)
+                return false;
+        }
+        return true;
+    }
 
     public String process(String query) {
         int max = 0;
         String[] queryNumbers = null;
+        String primes;
         int[] queryInt = new int[100];
         if (query.toLowerCase().contains("largest")){
 
@@ -36,6 +44,25 @@ public class QueryProcessor {
         } else if (query.toLowerCase().contains("square and a cube")){
 
 
+        }else if (query.toLowerCase().contains("primes")){
+            String result ="";
+            queryNumbers = query.split(":")[1].split(",");
+
+            for (int i=0;i<queryNumbers.length;i++) {
+                if (queryNumbers[i] != null) {
+
+                    queryInt[i] = Integer.parseInt(queryNumbers[i].trim());
+                    if (isPrime(queryInt[i])){
+                        result+= Integer.toString(queryInt[i])+ " ";
+                    }
+                }
+                System.out.println(result);
+                return result;
+            }
+
+
+        }else if (query.toLowerCase().contains("Eiffel")){
+            return "Paris";
         }
 
 

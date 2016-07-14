@@ -25,6 +25,16 @@ public class QueryProcessorTest {
         QueryProcessor query = new QueryProcessor();
         query.process(" what is 100 multiplied by 12");
     }
+    @Test
+    public void eiffeltest() throws Exception {
+        QueryProcessor query = new QueryProcessor();
+        query.process(" which city is the Eiffel tower in");
+    }
+    @Test
+    public void primestest() throws Exception {
+        QueryProcessor query = new QueryProcessor();
+        query.process(" primes: 10, 11, 1, 4, 5 ");
+    }
 
 
 }
