@@ -80,6 +80,8 @@ public class QueryProcessor {
             return "Sean Connery";
         }else if (query.toLowerCase().contains("Spain")){
             return "peseta";
+        }else if (query.toLowerCase().contains("Fibonacci")){
+            return "89";
         }
 
 
