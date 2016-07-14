@@ -51,7 +51,7 @@ public class QueryProcessor {
 
 
         }else if (query.toLowerCase().contains("primes")){
-            String result ="";
+/*            String result ="";
             queryNumbers = query.split(":")[1].split(",");
 
             for (int i=0;i<queryNumbers.length;i++) {
@@ -64,7 +64,7 @@ public class QueryProcessor {
                 }
                 System.out.println("Primes: "+result);
                 return result;
-            }
+            }*/
 
 
         }else if (query.toLowerCase().contains("Eiffel")){
