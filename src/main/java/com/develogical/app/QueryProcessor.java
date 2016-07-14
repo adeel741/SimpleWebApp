@@ -26,6 +26,11 @@ public class QueryProcessor {
             return Integer.toString(result);
         }
         else if (query.toLowerCase().contains("multiplied")){
+            String[] array = query.split(" ");
+            int result = Integer.parseInt(array[2]) * Integer.parseInt(array[5]);
+            return Integer.toString(result);
+        } else if (query.toLowerCase().contains("square and a cube")){
+
 
         }
 
