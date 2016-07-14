@@ -7,19 +7,20 @@ public class QueryProcessor {
         int max = 0;
         String[] queryNumbers = null;
         int[] queryInt = null;
-        String[] queryArray = query.split(":");
-        if (queryArray[0].toLowerCase().contains("which of the following numbers is the largest")){
+        if (query.toLowerCase().contains("largest")){
 
-                queryNumbers = queryArray[1].split(",");
+                queryNumbers = query.split(":")[1].split(",");
                 for (int i=0;i<queryNumbers.length;i++){
                     queryInt[i] = Integer.parseInt(queryNumbers[i]);
                     if (queryInt[i] > max){max = queryInt[i];}
                 }
+            return Integer.toString(max);
+        }else if (query.toLowerCase().contains("plus")){
 
         }
 
 
-        return ""+max;
+        return "";
 
 
 //        else if (query.toLowerCase().contains("what is your name"))
