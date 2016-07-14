@@ -4,7 +4,7 @@ package com.develogical.app;
 public class QueryProcessor {
 
     public String process(String query) {
-        int max = 0;
+/*        int max = 0;
         String[] queryNumbers = null;
         int[] queryInt = new int[100];
         if (query.toLowerCase().contains("largest")){
@@ -13,6 +13,7 @@ public class QueryProcessor {
                 System.out.println(queryNumbers.toString());
                 for (int i=0;i<queryNumbers.length;i++) {
                     if (queryNumbers[i] != null && queryNumbers[i] != "") {
+
                         queryInt[i] = Integer.parseInt(queryNumbers[i].trim());
                         if (queryInt[i] > max) {
                             max = queryInt[i];
@@ -35,7 +36,7 @@ public class QueryProcessor {
         } else if (query.toLowerCase().contains("square and a cube")){
 
 
-        }
+        }*/
 
 
         return "";
