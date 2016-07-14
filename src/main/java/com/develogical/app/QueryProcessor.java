@@ -8,11 +8,16 @@ public class QueryProcessor {
         String[] queryNumbers = null;
         int[] queryInt = null;
         String[] queryArray = query.split(":");
-        queryNumbers = queryArray[1].split(",");
-        for (int i=0;i<queryNumbers.length;i++){
-            queryInt[i] = Integer.parseInt(queryNumbers[i]);
-            if (queryInt[i] > max){max = queryInt[i];}
+        if (queryArray[0].toLowerCase().contains("which of the following numbers is the largest")){
+
+                queryNumbers = queryArray[1].split(",");
+                for (int i=0;i<queryNumbers.length;i++){
+                    queryInt[i] = Integer.parseInt(queryNumbers[i]);
+                    if (queryInt[i] > max){max = queryInt[i];}
+                }
+
         }
+
 
         return ""+max;
 
