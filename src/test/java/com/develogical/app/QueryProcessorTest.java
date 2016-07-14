@@ -21,6 +21,11 @@ public class QueryProcessorTest {
         query.process(" what is 100 plus 12");
     }
     @Test
+    public void minustest() throws Exception {
+        QueryProcessor query = new QueryProcessor();
+        query.process(" what is 100 minus 12");
+    }
+    @Test
     public void multipliedtest() throws Exception {
         QueryProcessor query = new QueryProcessor();
         query.process(" what is 100 multiplied by 12");
@@ -33,7 +38,7 @@ public class QueryProcessorTest {
     @Test
     public void primestest() throws Exception {
         QueryProcessor query = new QueryProcessor();
-        query.process(" primes: 10, 11, 1, 4, 5 ");
+        query.process(" which of the following numbers are primes: 633, 990, 443, 131");
     }
 
 

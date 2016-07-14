@@ -36,6 +36,12 @@ public class QueryProcessor {
             System.out.println(result);
             return Integer.toString(result);
         }
+        else if (query.toLowerCase().contains("minus")){
+            String[] array = query.split(" ");
+            int result = Integer.parseInt(array[3]) - Integer.parseInt(array[5]);
+            System.out.println("Minus "+result);
+            return Integer.toString(result);
+        }
         else if (query.toLowerCase().contains("multiplied")){
             String[] array = query.split(" ");
             int result = Integer.parseInt(array[3]) * Integer.parseInt(array[6]);
@@ -56,7 +62,7 @@ public class QueryProcessor {
                         result+= Integer.toString(queryInt[i])+ " ";
                     }
                 }
-                System.out.println(result);
+                System.out.println("Primes: "+result);
                 return result;
             }
 
