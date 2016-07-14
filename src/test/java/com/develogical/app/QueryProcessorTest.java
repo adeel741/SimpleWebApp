@@ -18,12 +18,12 @@ public class QueryProcessorTest {
     @Test
     public void plustest() throws Exception {
         QueryProcessor query = new QueryProcessor();
-        query.process("what is 100 plus 12");
+        query.process(" what is 100 plus 12");
     }
     @Test
     public void multipliedtest() throws Exception {
         QueryProcessor query = new QueryProcessor();
-        query.process("what is 100 multiplied by 12");
+        query.process(" what is 100 multiplied by 12");
     }
 
 

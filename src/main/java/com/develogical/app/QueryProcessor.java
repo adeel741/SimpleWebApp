@@ -9,11 +9,10 @@ public class QueryProcessor {
         int[] queryInt = new int[100];
         if (query.toLowerCase().contains("largest")){
 
-            String[] split = query.split(":");
-            queryNumbers = split[1].split(",");
+            queryNumbers = query.split(":")[1].split(",");
 
                 for (int i=0;i<queryNumbers.length;i++) {
-                    if (queryNumbers[i] != null && queryNumbers[i] != "") {
+                    if (queryNumbers[i] != null) {
 
                         queryInt[i] = Integer.parseInt(queryNumbers[i].trim());
                         if (queryInt[i] > max) {
