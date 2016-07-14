@@ -40,6 +40,10 @@ public class QueryProcessorTest {
         QueryProcessor query = new QueryProcessor();
         query.process(" which of the following numbers are primes: 633, 990, 443, 131");
     }
-
+    @Test
+    public void fibonacciTest() throws Exception {
+        QueryProcessor query = new QueryProcessor();
+        System.out.println("Fibonacci"+query.process(" what is the 4th number in the Fibonacci sequence"));
+    }
 
 }
