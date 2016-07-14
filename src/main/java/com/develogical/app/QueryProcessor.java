@@ -4,12 +4,13 @@ package com.develogical.app;
 public class QueryProcessor {
 
     public String process(String query) {
-/*        int max = 0;
+        int max = 0;
         String[] queryNumbers = null;
         int[] queryInt = new int[100];
         if (query.toLowerCase().contains("largest")){
 
-                queryNumbers = query.split(":")[1].split(",");
+            String[] split = query.split(":");
+            queryNumbers = split[1].split(",");
                 System.out.println(queryNumbers.toString());
                 for (int i=0;i<queryNumbers.length;i++) {
                     if (queryNumbers[i] != null && queryNumbers[i] != "") {
@@ -36,7 +37,7 @@ public class QueryProcessor {
         } else if (query.toLowerCase().contains("square and a cube")){
 
 
-        }*/
+        }
 
 
         return "";
